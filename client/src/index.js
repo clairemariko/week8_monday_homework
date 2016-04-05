@@ -41,7 +41,7 @@ window.onload = function(){
 
     for(var accountPersonal of allPersonalAccounts){
       var li = document.createElement("li");
-      li.innerText = accountPersonal.owner + " " + accountPersonal.amount;
+      li.innerText = accountPersonal.owner + " " + "£" + accountPersonal.amount;
       personalList.appendChild(li);
 
     };
@@ -54,7 +54,7 @@ window.onload = function(){
 
     for(var accountBusiness of businessDisplay){
       var li = document.createElement("li");
-      li.innerText = accountBusiness.owner + " " + accountBusiness.amount;
+      li.innerText = accountBusiness.owner + " " + "£" + accountBusiness.amount;
       businessList.appendChild(li);
     };
 
